@@ -1,9 +1,12 @@
-/** @type {import('tailwindcss').Config} */
+// tailwind.config.js
 export default {
-  content: [ "./index.html", "./src/**/*.{js,ts,jsx,tsx}", ],
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
     extend: {
-       keyframes: {
+      keyframes: {
         blob: {
           '0%': { transform: 'scale(1)' },
           '33%': { transform: 'scale(1.2)' },
@@ -20,5 +23,4 @@ export default {
     },
   },
   plugins: [],
-}
-
+};
